@@ -52,7 +52,15 @@ function nextEmployee() {
     ])
     .then((response) => {
         if (response.newemployee === 'Add Engineer') {
-           createEngineer
+           createEngineer()
+        }
+
+        if (response.newemployee === 'Add Intern') {
+            createIntern()
+        }
+
+        if (response.newemployee === 'Done') {
+            // Write File after selecting done.
         }
     })
 }
