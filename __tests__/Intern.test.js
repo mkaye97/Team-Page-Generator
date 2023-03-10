@@ -13,19 +13,19 @@ describe("Intern Class", () => {
       it("should return an object containing an 'id' property when called with the 'new' keyword", () => {
         const obj = new Intern("Daniel", 489, "daniel@email.com", "Harvard");
   
-        expect("id" in obj).toEqual(Number);
+        expect(obj.id).toBe(489);
       });
 
       it("should return an object containing an 'email' property when called with the 'new' keyword", () => {
         const obj = new Intern("Daniel", 489, "daniel@email.com", "Harvard");
   
-        expect("email" in obj).toEqual(String);
+        expect(obj.email).toBe("daniel@email.com");
       });
 
       it("should return an object containing 'school' property when called with the 'new' keyword", () => {
         const obj = new Intern("Daniel", 489, "daniel@email.com", "Harvard");
   
-        expect("school" in obj).toEqual(String);
+        expect(obj.school).toBe("Harvard");
       });
     });
 
@@ -33,16 +33,8 @@ describe("Intern Class", () => {
         it("should return the Role 'Intern' when the getRole() function is called", () => {
           const obj = new Intern("Daniel", 489, "daniel@email.com", "Harvard");
     
-          expect(obj.getRole()).toEqual('Intern');
+          expect(obj.getRole()).toBe("Intern");
         });
-      });
-
-    describe("GetRole", () => {
-        it("should return the Role 'Intern' when the getRole() function is called", () => {
-          const obj = new Intern("Daniel", 489, "daniel@email.com", "Harvard");
-    
-          expect(getSchool(obj)).toEqual('Intern');
-        });
-      });  
+      }); 
   });
   
