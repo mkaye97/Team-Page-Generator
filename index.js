@@ -38,7 +38,9 @@ const htmlTemp = (arr) => {
                     </div>\n
                     <ul class="list-group list-group-flush">\n
                         <li class="list-group-item">${employee.getID()}</li>\n
-                        <li class="list-group-item">${employee.getGithub()}</li>\n
+                        <li class="list-group-item">
+                            <a href="https://github.com/${employee.getGithub()}" target="_blank" rel="noopener noreferrer">${employee.getGithub()}</a>
+                        </li>\n
                     </ul>\n
                     <div class="card-body">\n
                         <a href="mailto:${employee.getEmail()}" class="card-link">${employee.getEmail()}</a>\n
