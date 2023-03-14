@@ -1,5 +1,12 @@
 # Team Page Generator
 
+## Description
+```md
+This application will accept input from a user to create an HTML page to centralize data about a development team. When it is run from the command line it will first prompt the team manager for their name, email, employee ID, and office number. From there the manager will have the options to add an engineer, and intern, or complete data entry and create the HTML file.
+
+Engineers will be prompted to provide their name, email, github profile, and employee ID number. An intern will be prompted for their name, email, employee ID, and the name of their school or university.
+```
+
 ## User Story
 ```md
 AS A manager
@@ -32,3 +39,4 @@ THEN I exit the application, and the HTML is generated
 
 Github: https://github.com/mkaye97/Team-Page-Generator
 
+Video Link: https://drive.google.com/file/d/1a1wHZryljqHKerMylKuUx-esnQLJc5tb/view
